@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayBackgroundMainActivity"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/textNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:digits="0123456789./*-+%"
+        android:ems="10"
+        android:background="@drawable/modifygrilla"
+        android:enabled="false"
+        android:gravity="right|center_vertical"
+        android:inputType="numberDecimal"
+        android:paddingTop="25dp"
+        android:paddingLeft="@dimen/margin_editText"
+        android:paddingRight="@dimen/margin_editText"
+        android:textColor="#000" />
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/buttons_margin"
+        android:columnCount="4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButtonC"
+            android:tag="@string/button_clear"
+            android:text="@string/button_clear"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button_del"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButtonDel"
+            android:tag="@string/button_del"
+            android:text="@string/button_del"
+            android:textSize="@dimen/size_text_number" />
+
+        <Button
+            android:id="@+id/button_divi"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButtonDivi"
+            android:tag="@string/button_divi"
+            android:text="@string/button_divi"
+            android:textSize="@dimen/size_text_number" />
+
+        <Button
+            android:id="@+id/button_mult"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButtonMult"
+            android:tag="@string/button_mult"
+            android:text="@string/button_mult"
+            android:textSize="@dimen/size_text_number" />
+
+
+        <Button
+            android:id="@+id/button_number_7"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButton7"
+            android:tag="@string/button_7"
+            android:text="@string/button_7"
+            android:textSize="@dimen/size_text_number" />
+
+        <Button
+            android:id="@+id/button_number_8"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButton8"
+            android:tag="@string/button_8"
+            android:text="@string/button_8"
+            android:textSize="@dimen/size_text_number" />
+
+        <Button
+            android:id="@+id/button_number_9"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButton9"
+            android:tag="@string/button_9"
+            android:text="@string/button_9"
+            android:textSize="@dimen/size_text_number" />
+
+        <Button
+            android:id="@+id/button_minus"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButtonRest"
+            android:tag="@string/button_rest"
+            android:text="@string/button_rest"
+            android:textSize="@dimen/size_text_number" />
+
+        <Button
+            android:id="@+id/button_number_4"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButton4"
+            android:tag="@string/button_4"
+            android:text="@string/button_4"
+            android:textSize="@dimen/size_text_number" />
+
+        <Button
+            android:id="@+id/button_number_5"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButton5"
+            android:tag="@string/button_5"
+            android:text="@string/button_5"
+            android:textSize="@dimen/size_text_number" />
+
+        <Button
+            android:id="@+id/button_number_6"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButton6"
+            android:tag="@string/button_6"
+            android:text="@string/button_6"
+            android:textSize="@dimen/size_text_number" />
+
+        <Button
+            android:id="@+id/button_plus"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButtonPlus"
+            android:tag="@string/button_plus"
+            android:text="@string/button_plus"
+            android:textSize="@dimen/size_text_number" />
+
+
+        <Button
+            android:id="@+id/button_number_1"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButton1"
+            android:text="@string/button_1"
+            android:textSize="@dimen/size_text_number" />
+
+
+        <Button
+            android:id="@+id/button_number_2"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButton2"
+            android:text="@string/button_2"
+            android:textSize="@dimen/size_text_number" />
+
+        <Button
+            android:id="@+id/button_number_3"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButton3"
+            android:tag="@string/button_3"
+            android:text="@string/button_3"
+            android:textSize="@dimen/size_text_number" />
+
+
+        <Button
+            android:id="@+id/button_equal"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttonequal"
+            android:onClick="onClickButtonEqual"
+            android:tag="@string/button_equal"
+            android:text="@string/button_equal"
+            android:textSize="@dimen/size_text_number" />
+
+
+        <Button
+            android:id="@+id/button_number_0"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButton0"
+            android:tag="@string/button_0"
+            android:text="@string/button_0"
+            android:textSize="@dimen/size_text_number" />
+
+
+        <Button
+            android:id="@+id/button_point"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButtonPoint"
+            android:tag="@string/button_point"
+            android:text="@string/button_point"
+            android:textSize="@dimen/size_text_number" />
+
+
+        <Button
+            android:id="@+id/button_percent"
+            android:layout_width="@dimen/numbers_button"
+            android:layout_height="@dimen/numbers_button"
+            android:background="@drawable/buttoncircle"
+            android:onClick="onClickButtonPercent"
+            android:tag="@string/button_percent"
+            android:text="@string/button_percent"
+            android:textSize="@dimen/size_text_number" />
+
+    </GridLayout>
+</LinearLayout>
